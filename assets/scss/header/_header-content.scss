@@ -1,0 +1,940 @@
+$var1: #637588
+$var2: #2d3651
+$var3: #ffffff
+$var4: #d66926
+$var5: #d53d27
+$var6: #e5e5e5
+$var7: #8c9bab
+$var8: #f2f2f2
+$var9: #d8d8d8
+
+html 
+	line-height: 1.15
+	-webkit-text-size-adjust: 100%
+
+body 
+	margin: 0
+
+main 
+	display: block
+
+h1 
+	margin: 0.67em 0
+	font-size: 2em
+
+abbr[title] 
+	text-decoration: underline
+	text-decoration: underline dotted
+	border-bottom: none
+	-webkit-text-decoration: underline dotted
+
+b, strong 
+	font-weight: bolder
+
+code, kbd, samp 
+	font-family: monospace, monospace
+	font-size: 1em
+
+small 
+	font-size: 80%
+
+sub, sup 
+	position: relative
+	vertical-align: baseline
+	font-size: 75%
+	line-height: 0
+
+sub 
+	bottom: -0.25em
+
+sup 
+	top: -0.5em
+
+img 
+	border-style: none
+
+button, input, optgroup, select, textarea 
+	margin: 0
+	font-family: inherit
+	font-size: 100%
+	line-height: 1.15
+
+button, input 
+	overflow: visible
+
+button, select 
+	text-transform: none
+
+button, [type="button"], [type="reset"], [type="submit"] 
+	-webkit-appearance: button
+	&::-moz-focus-inner 
+		padding: 0
+		border-style: none
+	
+	&:-moz-focusring 
+		outline: 1px dotted ButtonText
+	
+
+fieldset 
+	padding: 0.35em 0.75em 0.625em
+
+legend 
+	display: table
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+	max-width: 100%
+	padding: 0
+	white-space: normal
+	color: inherit
+
+progress 
+	vertical-align: baseline
+
+textarea 
+	overflow: auto
+
+[type="checkbox"], [type="radio"] 
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+	padding: 0
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button 
+	height: auto
+
+[type="search"] 
+	outline-offset: -2px
+	-webkit-appearance: textfield
+	&::-webkit-search-decoration 
+		-webkit-appearance: none
+	
+
+::-webkit-file-upload-button 
+	font: inherit
+	-webkit-appearance: button
+
+details 
+	display: block
+
+summary 
+	display: list-item
+
+template 
+	display: none
+
+[hidden] 
+	display: none
+
+.header-menu__container, .header-content__container, .about__container, .form__container, .posts__container, .footer__container 
+	max-width: 1340px
+	margin: auto
+	padding-right: 20px
+	padding-left: 20px
+
+.about h2, .posts h2 
+	margin-top: 0
+
+* 
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+
+html 
+	color: @var1
+	font-family: "Roboto", sans-serif
+	font-size: 16px
+
+h1 
+	letter-spacing: 0.08em
+	font-family: "Roboto Slab", serif
+	font-weight: 300
+	line-height: 1.2em
+
+h2 
+	letter-spacing: 0.1em
+	color: @var2
+	font-family: "Roboto Slab", serif
+	line-height: 1.2em
+
+h3 
+	letter-spacing: 0.05em
+	color: @var1
+	font-size: 1.125rem
+
+a 
+	text-decoration: none
+	color: @var3
+
+p 
+	color: @var1
+
+input:focus 
+	outline: none
+
+.btn 
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	align-items: center
+	-ms-flex-align: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
+	height: 60px
+	-webkit-transition: background-color 0.5s, border-color 0.5s
+	-o-transition: background-color 0.5s, border-color 0.5s
+	transition: background-color 0.5s, border-color 0.5s
+	letter-spacing: 0.1em
+	border-width: 2px
+	border-style: solid
+	font-size: 1.125rem
+	&:hover, &:focus 
+		background-color: @var4
+	
+	&--light 
+		border-color: @var3
+		background-color: rgba(255, 255, 255, 0.1)
+	
+	&--primary 
+		border-color: @var2
+		background-color: rgba(45, 54, 81, 0.8)
+	
+	&--light 
+		min-width: 250px
+	
+	&--light 
+		min-width: 200px
+		height: 50px
+		font-size: 1rem
+	
+	&--light 
+		min-width: 170px
+		height: 40px
+		letter-spacing: 0.05em
+		font-size: 1rem
+	
+	&--light 
+		min-width: 170px
+		height: 40px
+		letter-spacing: 0.05em
+		font-size: 1rem
+	
+
+.header 
+	position: relative
+	display: grid
+	-ms-flex-line-pack: center
+	align-content: center
+	min-height: 100vh
+	padding: 100px 0
+	color: @var3
+	background-color: @var2
+	background-position: 50% 50%
+	background-size: cover
+	&-overlay 
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		opacity: 0.8
+		background-color: @var2
+	
+	&-menu 
+		position: absolute
+		z-index: 1
+		top: 0
+		left: 0
+		width: 100%
+		&__container 
+			display: grid
+			grid-template-columns: auto 1fr
+		
+	
+	&-logo 
+		-ms-flex-item-align: center
+		align-self: center
+		letter-spacing: 0.22em
+		font-size: 1.5rem
+		&__link 
+			display: block
+			padding: 20px 20px 20px 0
+			&:hover, &:focus 
+				color: @var3
+			
+		
+		&__accent 
+			display: inline-block
+			margin-right: 4px
+			padding: 14px 1px 13px 5px
+			border: 3px solid @var5
+		
+	
+	&-navbar 
+		display: grid
+		-webkit-box-align: center
+		align-items: center
+		-ms-flex-align: center
+		letter-spacing: 0.1em
+		justify-items: end
+		&__link 
+			display: block
+			-webkit-transition: color 0.5s
+			-o-transition: color 0.5s
+			transition: color 0.5s
+			font-size: 1.125rem
+			&:hover, &:focus 
+				color: @var4
+			
+		
+		&__btn 
+			position: relative
+			width: 30px
+			height: 23px
+			margin: 20px 0
+			cursor: pointer
+			-webkit-transition: 0.5s ease-in-out
+			-o-transition: 0.5s ease-in-out
+			transition: 0.5s ease-in-out
+			-webkit-transform: rotate(0deg)
+			-ms-transform: rotate(0deg)
+			transform: rotate(0deg)
+			&-row 
+				position: absolute
+				left: 0
+				display: block
+				width: 100%
+				height: 3px
+				-webkit-transition: 0.25s ease-in-out
+				-o-transition: 0.25s ease-in-out
+				transition: 0.25s ease-in-out
+				-webkit-transform: rotate(0deg)
+				-ms-transform: rotate(0deg)
+				transform: rotate(0deg)
+				opacity: 1
+				border-radius: 3px
+				background: @var3
+				&:nth-of-type(1) 
+					top: 0
+				
+				&:nth-of-type(2) 
+					top: 9px
+				
+				&:nth-of-type(3) 
+					top: 18px
+				
+			
+			&--active span:nth-of-type(1) 
+				top: 9px
+				-webkit-transform: rotate(135deg)
+				-ms-transform: rotate(135deg)
+				transform: rotate(135deg)
+			
+			&--active span:nth-of-type(2) 
+				left: -30px
+				opacity: 0
+			
+			&--active span:nth-of-type(3) 
+				top: 9px
+				-webkit-transform: rotate(-135deg)
+				-ms-transform: rotate(-135deg)
+				transform: rotate(-135deg)
+			
+		
+		&__item 
+			margin-left: 20px
+		
+		&__link 
+			padding: 20px 10px
+		
+		&__btn 
+			display: none
+		
+		&__list 
+			position: absolute
+			top: 100%
+			right: 20px
+			display: none
+			margin: 0
+			padding: 0
+			list-style: none
+			text-align: right
+			background-color: rgba(68, 89, 110, 0.9)
+			-webkit-box-shadow: -3px 3px 20px -10px black
+			box-shadow: -3px 3px 20px -10px black
+		
+		&__item 
+			margin: 20px 10px
+		
+		&__link 
+			padding: 10px 20px
+		
+		&__btn 
+			display: block
+		
+	
+	&-content 
+		position: relative
+		&__container 
+			display: grid
+		
+		&__title 
+			text-align: center
+		
+		&__actions 
+			display: -webkit-box
+			display: -ms-flexbox
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-box-pack: center
+			-ms-flex-pack: center
+			justify-content: center
+			.btn:not(:last-of-type) 
+				margin-right: 20px
+			
+			.btn:not(:last-of-type) 
+				margin-bottom: 20px
+			
+		
+		&__title 
+			margin: 0 0 53px
+		
+		&__title 
+			margin: 0 0 43px
+		
+		&__title 
+			margin: 0 0 33px
+		
+		&__actions 
+			-webkit-box-align: center
+			align-items: center
+			-ms-flex-align: center
+			-webkit-box-orient: vertical
+			-webkit-box-direction: normal
+			-ms-flex-direction: column
+			flex-direction: column
+		
+	
+	&-menu 
+		background-color: rgba(68, 89, 110, 0.25)
+		-webkit-box-shadow: -3px 3px 20px -10px black
+		box-shadow: -3px 3px 20px -10px black
+	
+
+.skills__container 
+	display: grid
+	padding-bottom: 20px
+
+.skill-item 
+	position: relative
+	display: grid
+	overflow: hidden
+	-webkit-box-align: center
+	align-items: center
+	-ms-flex-align: center
+	padding: 20px
+	justify-items: center
+	&__link 
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		align-items: center
+		-ms-flex-align: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+		height: 100%
+		padding: 20px
+		-webkit-transition: color 0.5s
+		-o-transition: color 0.5s
+		transition: color 0.5s
+	
+	&__overlay 
+		position: absolute
+		z-index: 1
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		-webkit-transition: opacity 0.5s
+		-o-transition: opacity 0.5s
+		transition: opacity 0.5s
+		opacity: 0.8
+		background-color: @var2
+	
+	&__image 
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		-webkit-transition: -webkit-transform 0.5s
+		-o-transition: transform 0.5s
+		transition: -webkit-transform 0.5s
+		transition: transform 0.5s
+		transition: transform 0.5s, -webkit-transform 0.5s
+		background-color: @var2
+		background-position: 50% 50%
+		background-size: cover
+	
+	&__title 
+		position: absolute
+		z-index: 1
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		margin: 0
+		letter-spacing: 0.1em
+	
+	&:hover .skill-item__overlay 
+		opacity: 0.95 
+	
+	&:hover .skill-item__image 
+		-webkit-transform: scale(1.1)
+		-ms-transform: scale(1.1)
+		transform: scale(1.1)
+	
+	&:hover .skill-item__link 
+		color: @var4
+	
+	&:nth-of-type(1) 
+		grid-area: a1
+	
+	&:nth-of-type(2) 
+		grid-area: a2
+	
+	&:nth-of-type(3) 
+		grid-area: a3
+	
+	&:nth-of-type(4) 
+		grid-area: a4
+	
+	&:nth-of-type(5) 
+		grid-area: a5
+	
+	&:nth-of-type(6) 
+		grid-area: a6
+	
+	&:nth-of-type(7) 
+		grid-area: a7
+	
+	&:nth-of-type(8) 
+		grid-area: a8
+	
+	&:nth-of-type(9) 
+		grid-area: a9
+	
+	&__title 
+		font-size: 1.25rem
+	
+	&__title 
+		font-size: 1.125rem
+	
+
+.about 
+	letter-spacing: 0.055em
+	background-color: @var6
+	&__container 
+		display: grid
+	
+	&__content p:first-of-type 
+		position: relative
+		margin-top: -5px
+		&::after 
+			position: absolute
+			top: 0
+			width: 2px
+			height: 200px
+			content: ""
+			background-color: rgba(99, 117, 136, 0.1)
+		
+		&::after 
+			right: -50px
+		
+		&::after 
+			right: -20px
+		
+		&::after 
+			right: -10px
+		
+		&::after 
+			display: none
+		
+	
+	&__content p:last-of-type 
+		margin: 0
+	
+	&__image 
+		display: grid
+		-ms-flex-line-pack: center
+		align-content: center
+		justify-items: center
+		img 
+			max-width: 100%
+			max-height: 480px
+		
+	
+	&__container 
+		gap: 100px
+		grid-template-columns: 1fr 271px
+	
+	&__content p 
+		font-size: 1.125rem
+	
+	&__container 
+		gap: 40px
+		grid-template-columns: 1fr 271px
+	
+	&__container 
+		gap: 20px
+		grid-template-columns: 1fr 236px
+	
+	&__container 
+		gap: 20px
+		grid-template-columns: 1fr
+	
+
+.form 
+	padding: 30px 0
+	background-color: @var2
+	&__container 
+		display: grid
+		gap: 20px
+	
+	.btn--primary 
+		width: 100%
+		color: @var3
+		border-color: rgba(255, 255, 255, 0)
+		border-bottom-color: rgba(255, 255, 255, 0.2)
+		background-color: rgba(255, 255, 255, 0.1)
+		&:hover, &:focus 
+			cursor: pointer
+			border-color: @var3
+			background-color: @var4
+		
+	
+	&-item__input 
+		display: block
+		width: 100%
+		height: 60px
+		padding-right: 30px
+		padding-left: 30px
+		-webkit-transition: background-color 0.5s, border-color 0.5s
+		-o-transition: background-color 0.5s, border-color 0.5s
+		transition: background-color 0.5s, border-color 0.5s
+		letter-spacing: 0.15em
+		color: @var3
+		border: 2px solid rgba(255, 255, 255, 0)
+		border-bottom-color: rgba(255, 255, 255, 0.25)
+		background-color: rgba(255, 255, 255, 0.05)
+		font-size: 1.125rem
+		&::-webkit-input-placeholder 
+			color: @var1
+		
+		&::-moz-placeholder 
+			color: @var1
+		
+		&:-ms-input-placeholder 
+			color: @var1
+		
+		&::-ms-input-placeholder 
+			color: @var1
+		
+		&::placeholder 
+			color: @var1
+		
+		&:hover, &:focus 
+			border-color: rgba(255, 255, 255, 0.15)
+			border-bottom-color: @var3
+			background-color: rgba(255, 255, 255, 0.15)
+			&::-webkit-input-placeholder 
+				color: @var7
+			
+			&::-moz-placeholder 
+				color: @var7
+			
+			&:-ms-input-placeholder 
+				color: @var7
+			
+			&::-ms-input-placeholder 
+				color: @var7
+			
+			&::placeholder 
+				color: @var7
+			
+		
+	
+	&__container 
+		grid-template-columns: repeat(3, 1fr)
+	
+	&__container 
+		grid-template-columns: repeat(2, 1fr)
+	
+	&-item:nth-of-type(1) 
+		grid-column: 1 
+	
+
+.posts__grid 
+	display: grid
+	padding-bottom: 20px
+	gap: 20px
+
+.post-item 
+	-webkit-transition: background-color 0.5s
+	-o-transition: background-color 0.5s
+	transition: background-color 0.5s
+	background-color: @var8
+	&:hover 
+		background-color: @var9
+		.post-item__image img 
+			-webkit-transform: scale(1.1)
+			-ms-transform: scale(1.1)
+			transform: scale(1.1)
+		
+		h3 
+			color: @var2
+		
+		p 
+			color: @var2
+		
+	
+	&__link 
+		display: grid
+		overflow: hidden
+		height: 100%
+		grid-template-rows: 300px 1fr
+	
+	&__image 
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		overflow: hidden
+		-ms-flex-line-pack: center
+		align-content: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+		background-color: @var2
+		img 
+			width: 100%
+			-webkit-transition: -webkit-transform 0.5s
+			-o-transition: transform 0.5s
+			transition: -webkit-transform 0.5s
+			transition: transform 0.5s
+			transition: transform 0.5s, -webkit-transform 0.5s
+			-o-object-fit: cover
+			object-fit: cover
+		
+	
+	&__caption 
+		display: grid
+		-ms-flex-line-pack: center
+		align-content: center
+		padding: 20px
+		h3 
+			-webkit-transition: color 0.5s
+			-o-transition: color 0.5s
+			transition: color 0.5s
+			text-align: center
+			font-family: "Roboto Slab", serif
+		
+		p 
+			-webkit-transition: color 0.5s
+			-o-transition: color 0.5s
+			transition: color 0.5s
+			text-align: center
+		
+	
+	&:nth-of-type(1) 
+		grid-area: p1
+	
+	&:nth-of-type(2) 
+		grid-area: p2
+	
+	&:nth-of-type(3) 
+		grid-area: p3
+	
+	&:nth-of-type(4) 
+		grid-area: p4
+	
+	&:nth-of-type(5) 
+		grid-area: p5
+	
+	&:nth-of-type(6) 
+		grid-area: p6
+	
+
+.footer 
+	padding: 50px 20px 70px
+	text-align: center
+	background-color: @var2
+	&__social 
+		position: relative
+		display: grid
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+		margin-bottom: 40px
+		grid-template-columns: repeat(auto-fit, minmax(50px, -webkit-max-content))
+		grid-template-columns: repeat(auto-fit, minmax(50px, max-content))
+		&::after 
+			position: absolute
+			bottom: -20px
+			left: calc(50% - 75px 
+			width: 75px
+			height: 2px
+			content: ""
+			background-color: rgba(255, 255, 255, 0.1)
+		
+		a 
+			display: block
+			padding: 10px
+			-webkit-transition: color 0.5s
+			-o-transition: color 0.5s
+			transition: color 0.5s
+			&:hover, &:focus 
+				color: @var4
+			
+		
+		.fab 
+			font-size: 36px
+		
+	
+	&__copy span:nth-of-type(1) 
+		margin-right: -0.5em
+		letter-spacing: 0.33em
+		font-weight: 100
+	
+	&__copy span:nth-of-type(2) 
+		letter-spacing: 0.05em
+		color: @var6
+		font-weight: 700
+	
+
+media (min-width: 576px) 
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
+
+.skills__actions .btn--primary, .posts__actions .btn--primary 
+	min-width: 350px
+
+.skills 
+	padding: 10px 10px 40px
+	&__container 
+		gap: 10px
+		grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6"
+		grid-template-columns: repeat(4, 1fr)
+	
+	&__container 
+		gap: 10px
+		grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9"
+		grid-template-columns: repeat(3, 1fr)
+	
+	&__container 
+		gap: 10px
+		grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9"
+		grid-template-columns: 1fr 1fr
+	
+	&__container 
+		gap: 20px
+		grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9"
+		grid-template-columns: 1fr
+	
+
+media (min-height: 691px) 
+	grid-auto-rows: calc(33.33333vh - 20px 
+
+media (min-width: 768px) 
+	display: grid
+	-webkit-box-pack: end
+	-ms-flex-pack: end
+	justify-content: flex-end
+	width: 100%
+	margin: 0 -10px 0 0
+	padding: 0
+	list-style: none
+	grid-template-columns: repeat(auto-fit, minmax(50px, -webkit-max-content))
+	grid-template-columns: repeat(auto-fit, minmax(50px, max-content))
+
+media (min-width: 992px) 
+	padding-top: 100px
+	padding-bottom: 100px
+
+h1 
+	font-size: 3.75rem
+
+h2 
+	margin-bottom: 56px
+	font-size: 2.5rem
+
+.posts__grid 
+	grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6"
+	grid-template-columns: repeat(4, 1fr)
+
+media (max-width: 991.8px) and (min-width: 768px) 
+	padding-top: 80px
+	padding-bottom: 80px
+
+h1 
+	font-size: 2.5rem
+
+h2 
+	margin-bottom: 42px
+	font-size: 2rem
+
+.posts__grid 
+	grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p5 p6"
+	grid-template-columns: repeat(3, 1fr)
+
+media (max-width: 767.8px) 
+	padding-top: 60px
+	padding-bottom: 60px
+	and (min-width: 576px) 
+		margin-bottom: 36px
+		font-size: 1.5rem
+	
+
+h1 
+	font-size: 1.875rem
+
+hr 
+	overflow: visible
+	-webkit-box-sizing: content-box
+	box-sizing: content-box
+	height: 0
+
+pre 
+	font-family: monospace, monospace
+	font-size: 1em
+
+a 
+	background-color: transparent
+
+.posts__grid 
+	grid-template-areas: "p1 p2" "p3 p4" "p5 p6"
+	grid-template-columns: 1fr 1fr
+
+media (max-height: 690px) 
+	grid-auto-rows: calc(230px - 20px 
+
+media (max-width: 575.8px) 
+	width: 100%
+
+h2 
+	margin-bottom: 36px
+	text-align: center
+	font-size: 1.5rem
+
+.skills 
+	padding: 20px
+
+.posts__grid 
+	grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6"
+	grid-template-columns: 1fr
+
