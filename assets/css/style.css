@@ -15,7 +15,20 @@ h1 {
 
   font-size: 2em;
 }
+hr {
+  overflow: visible;
 
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+a {
+  background-color: transparent;
+}
 abbr[title] {
   text-decoration: underline;
   text-decoration: underline dotted;
@@ -288,7 +301,7 @@ input:focus {
 
 .header-menu {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
 
@@ -429,6 +442,7 @@ input:focus {
 
 .header-content {
   position: relative;
+  z-index: 1;
 }
 
 .header-content__container {
@@ -443,11 +457,11 @@ input:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+
+  gap: 20px;
 }
 
 .skills__container {
@@ -491,7 +505,6 @@ input:focus {
 
 .skill-item__overlay {
   position: absolute;
-  z-index: 1;
   top: 0;
   right: 0;
   bottom: 0;
@@ -935,9 +948,6 @@ input:focus {
   .posts__actions .btn--primary {
     min-width: 350px;
   }
-  .header-content__actions .btn:not(:last-of-type) {
-    margin-right: 20px;
-  }
   .skills {
     padding: 10px 10px 40px;
   }
@@ -1073,20 +1083,6 @@ input:focus {
   h1 {
     font-size: 1.875rem;
   }
-  hr {
-    overflow: visible;
-  
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-    height: 0;
-  }
-  pre {
-    font-family: monospace, monospace;
-    font-size: 1em;
-  }
-  a {
-    background-color: transparent;
-  }
   .header-menu {
     background-color: rgba(68, 89, 110, 0.25);
     -webkit-box-shadow: -3px 3px 20px -10px black;
@@ -1200,8 +1196,9 @@ input:focus {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .header-content__actions .btn:not(:last-of-type) {
-    margin-bottom: 20px;
+  .posts__grid {
+    grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
+    grid-template-columns: 1fr;
   }
   .skills {
     padding: 20px;
@@ -1211,15 +1208,11 @@ input:focus {
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
     grid-template-columns: 1fr;
   }
-  .about__container {
-    gap: 20px;
-    grid-template-columns: 1fr;
-  }
   .about__content p:first-of-type::after {
     display: none;
   }
-  .posts__grid {
-    grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
+  .about__container {
+    gap: 20px;
     grid-template-columns: 1fr;
   }
 }
